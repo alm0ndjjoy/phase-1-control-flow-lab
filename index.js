@@ -1,5 +1,5 @@
 function scuberGreetingForFeet(someValue){
-  if (someValue > 2500){
+  if(someValue > 2500){
     return "No can do."
   } else if (someValue > 2000){
     return "I will gladly take your thirty bucks."
@@ -8,20 +8,39 @@ function scuberGreetingForFeet(someValue){
   }
 }
 
+let city = "NYC"
 function ternaryCheckCity(city){
-  return (city === "NYC" ? "Ok, sounds good." : "No go.")
+  return (city === "NYC"? "Ok, sounds good." : "No go.")
+
 }
 
+
 function switchOnCharmFromTip(tip){
-  
-  switch (tip) {
-    case "generous": {
+  switch(tip){
+    case "generous":
       return "Thank you so much."
-    } break;
-    case "not as generous": {
-      return "Thank you."
-    } break;
-    default:
-      return "Bye."
+      case "not as generous":
+        return "Thank you."
+        default:
+          return "Bye."
   }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
